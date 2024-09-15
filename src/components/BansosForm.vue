@@ -586,7 +586,7 @@ export default {
           id="name"
           value="${this.form.name}"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       
@@ -599,7 +599,7 @@ export default {
           id="nik"
           value="${this.form.nik}"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       
@@ -612,7 +612,7 @@ export default {
           id="familyCard"
           value="${this.form.familyCard}"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       
@@ -625,7 +625,7 @@ export default {
           id="age"
           value="${this.form.age}"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       
@@ -638,7 +638,7 @@ export default {
           id="gender"
           value="${this.form.gender}"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       
@@ -655,7 +655,7 @@ export default {
               : this.form.province
           }"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       <div class="join w-full">
@@ -671,7 +671,7 @@ export default {
               : this.form.province
           }"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       <div class="join w-full">
@@ -685,7 +685,7 @@ export default {
             this.form.city === "Other" ? this.form.customCity : this.form.city
           }"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       <div class="join w-full">
@@ -701,7 +701,7 @@ export default {
               : this.form.subDistrict
           }"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       <div class="join w-full">
@@ -717,7 +717,7 @@ export default {
               : this.form.village
           }"
           class="input input-bordered input-md join-item w-full"
-          disabled
+          readonly
         />
       </div>
       <div class="join w-full">
@@ -732,7 +732,7 @@ export default {
           id="address"
           value="${this.form.address}"
           class="join-item input input-bordered w-full"
-          disabled
+          readonly
         />
       </div>
 
@@ -749,7 +749,7 @@ export default {
             id="rt"
             value="${this.form.rt}"
             class="join-item input input-bordered w-full"
-            disabled
+            readonly
           />
         </div>
         <div class="join w-1/2">
@@ -764,7 +764,7 @@ export default {
             id="rw"
             value="${this.form.rw}"
             class="join-item input input-bordered w-full"
-            disabled
+            readonly
           />
         </div>
       </div>
@@ -780,7 +780,7 @@ export default {
           id="incomeBeforePandemic"
           value="${this.form.incomeBeforePandemic}"
           class="input input-bordered w-full"
-          disabled
+          readonly
         />
       </div>
 
@@ -795,7 +795,7 @@ export default {
           id="incomeAfterPandemic"
           value="${this.form.incomeAfterPandemic}"
           class="input input-bordered w-full"
-          disabled
+          readonly
         />
       </div>
 
@@ -812,7 +812,7 @@ export default {
               : this.form.reason
           }"
           class="input input-bordered w-full"
-          disabled
+          readonly
         />
       </div>
 
@@ -959,7 +959,7 @@ export default {
             {
               headers: {
                 "Content-Type": "application/json",
-                Accept: "application/json",
+                "Accept": "application/json",
                 "Access-Control-Allow-Origin": "*",
               },
             }
