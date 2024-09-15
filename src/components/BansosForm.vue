@@ -1,6 +1,6 @@
 <template>
   <!-- Top navigation -->
-  <div class="breadcrumbs text-sm p-4">
+  <div class="breadcrumbs text-sm p-4 bg-slate-50">
     <ul>
       <li>
         <a>
