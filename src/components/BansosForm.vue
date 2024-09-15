@@ -886,7 +886,14 @@ export default {
     async fetchProvinces() {
       try {
         const response = await axios.get(
-          "https://emsifa.github.io/api-wilayah-indonesia/api/provinces.json"
+          "https://emsifa.github.io/api-wilayah-indonesia/api/provinces.json",
+          {
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json",
+              "Access-Control-Allow-Origin": "*",
+            },
+          }
         );
         this.provinces = response.data;
       } catch (error) {
@@ -900,7 +907,14 @@ export default {
             (prov) => prov.name === this.form.province
           )?.id;
           const response = await axios.get(
-            `https://emsifa.github.io/api-wilayah-indonesia/api/regencies/${provinceId}.json`
+            `https://emsifa.github.io/api-wilayah-indonesia/api/regencies/${provinceId}.json`,
+            {
+              headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "Access-Control-Allow-Origin": "*",
+              },
+            }
           );
           this.cities = response.data;
         } catch (error) {
@@ -917,7 +931,14 @@ export default {
             (cit) => cit.name === this.form.city
           )?.id;
           const response = await axios.get(
-            `https://emsifa.github.io/api-wilayah-indonesia/api/districts/${cityId}.json`
+            `https://emsifa.github.io/api-wilayah-indonesia/api/districts/${cityId}.json`,
+            {
+              headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "Access-Control-Allow-Origin": "*",
+              },
+            }
           );
           this.subDistricts = response.data;
         } catch (error) {
@@ -934,7 +955,14 @@ export default {
             (sub) => sub.name === this.form.subDistrict
           )?.id;
           const response = await axios.get(
-            `https://emsifa.github.io/api-wilayah-indonesia/api/villages/${subDistrictId}.json`
+            `https://emsifa.github.io/api-wilayah-indonesia/api/villages/${subDistrictId}.json`,
+            {
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                "Access-Control-Allow-Origin": "*",
+              },
+            }
           );
           this.villages = response.data;
         } catch (error) {
