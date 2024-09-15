@@ -148,7 +148,7 @@
             <div class="text-xs">Maksimal 2MB, format JPG/JPEG/PNG/BMP</div>
 
             <div>
-              <label for="ktpPhoto" class="form-control w-full">
+              <label for="ktpPhoto" class="form-control">
                 <div class="label">
                   <span class="font-bold text-slate-700">Foto KTP</span>
                 </div>
@@ -158,14 +158,14 @@
                   ref="ktpPhoto"
                   @change="handleFileUpload('ktpPhoto', $event)"
                   accept="image/*"
-                  class="file-input file-input-bordered w-auto"
+                  class="file-input file-input-bordered w-full max-w-xs"
                   required
                 />
               </label>
             </div>
 
             <div>
-              <label for="familyCardPhoto" class="form-control w-full">
+              <label for="familyCardPhoto" class="form-control">
                 <div class="label">
                   <span class="font-bold text-slate-700"
                     >Foto Kartu Keluarga</span
@@ -177,7 +177,7 @@
                   ref="familyCardPhoto"
                   @change="handleFileUpload('familyCardPhoto', $event)"
                   accept="image/*"
-                  class="file-input file-input-bordered w-auto"
+                  class="file-input file-input-bordered w-full max-w-xs"
                   required
                 />
               </label>
@@ -201,7 +201,7 @@
             />
           </div>
 
-          <div class="flex flex-col w-1/4">
+          <div class="flex flex-col w-1/2 lg:w-1/4">
             <label for="gender" class="block font-bold text-slate-700 mb-2"
               >Jenis Kelamin:</label
             >
